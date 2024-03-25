@@ -111,7 +111,6 @@ updateTomlFiles.dependsOn copyStdlibs
 
 build.mustRunAfter ":runtime.management-native:build"
 build.dependsOn ":runtime.management-ballerina:generatePomFileForMavenPublication"
-test.dependsOn ":runtime.management-native:build"
 
 publishToMavenLocal.dependsOn build
 publish.dependsOn build
